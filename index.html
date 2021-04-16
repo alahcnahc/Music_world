@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Music Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="header">
+        <div id="navbar">
+            <img src="icon2.png" id="icon">
+            <h3 id="music">Music &#9829;</h3>
+            <nav class="nav">
+                <ul id="menuList">
+                    <li id="menu-1"><a href="index.html">Home</a></li>
+                    <li id="menu-2"><a href="index.html">About Us</a></li>
+                    <li id="menu-3"><a href="index.html">Music Gallery</a></li>
+                    <li id="menu-4"><a href="index.html">Contact Us</a></li>
+                    <li id="menu-5"><a href="index.html">Help</a></li>
+                </ul>
+            </nav>
+            <i class="fa fa-bars" onclick="togglemenu()"></i>
+        </div>
+        <div class="text">
+            <h1>Moto:)</h1>
+            <p>Aspire to Inspire before we Expire <br> Aspire for Music, Inspired By Arijit Singh</p>
+        </div>
+    </section>
+    <section id="list">
+        <div id="song">
+            <h3>My Favorite Songs</h3>
+            <ul>
+                <li>Vaaste</li>
+                <li>Nayan</li>
+                <li>Raba mehar kari</li>
+                <li>Luck Di Kasam</li>
+                <li>Ringtone</li>
+            </ul>
+        </div>
+        <div id="friends">
+            <h3>My Best Friends</h3>
+            <ul>
+                <li>Nikita</li>
+                <li>Sanjana</li>
+                <li>Roshan</li>
+                <li>Shivnath</li>
+                <li>Ashish</li>
+            </ul>
+        </div>
+    </section>
+    <section id="singers">
+        <div class="singers" id="arijit">
+            <h3>Arijit Singh</h3>
+            <li>Arijit Singh was born on 25 April 1987.</li>
+            <li>His father was a sikh and Mother was a Bengali.</li>
+            <li>He Began his journey at a very young age</li>
+            <li>His maternal aunt and maternal grandmother helped him a lot</li>
+        </div>
+        <div class="singers" id="jubin">
+            <h3>Jubin Nautiyal</h3>
+            <li>Jubin Nautiyal was born in Dehradun.</li>
+            <li>His father and mother are from business background.</li>
+            <li>He did his school till eigth only.</li>
+            <li>He gave audition but didn't win the show.</li>
+        </div>
+        <div class="singers" id="tulsi">
+            <h3>Tulsi Kumar</h3>
+            <li>Tulsi kumar was born on 15 March 1986.</li>
+            <li>She is a playback singer , RJ and a Host too.</li>
+            <li>Her father is a founder of T-Series.</li>
+            <li>Her famous song is Tanhaai</li>
+        </div>
+        <div class="singers" id="neha">
+            <h3>Neha Kakkar</h3>
+            <li>She was born on 6th June 1988.</li>
+            <li>Her journey started from 2006 as a singer.</li>
+            <li>She had given audition in Indian Idol but didn't win.</li>
+            <li>And now she is a judge in Indian Idol.</li>
+        </div>
+    </section>
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "300px";
+
+            } else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
