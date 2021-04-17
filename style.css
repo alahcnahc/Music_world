@@ -292,7 +292,7 @@ section .singer-img {
     justify-content: space-between;
 }
 /*footer and copyright*/
-.footer{
+footer{
     background: rgba(225, 225, 225, 0.1);
     text-align: center;
 }
