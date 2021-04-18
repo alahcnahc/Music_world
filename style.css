@@ -119,6 +119,29 @@ nav ul li a:hover::after {
     margin-top: 1rem;
 }
 
+/* button */
+
+button {
+    background: linear-gradient(to right, #ff8d5c, #fe2493);
+    margin: 0;
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    width: 200px;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+}
 
 /* menu or hamburger */
 
