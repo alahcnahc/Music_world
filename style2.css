@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.m-gallery {
+    margin: 0%;
+    padding: 0%;
+    background: linear-gradient(to right, #f857a6, #ff5858);
+    position: relative;
+}
+
+.heading {
+    text-align: center;
+    text-transform: capitalize;
+    padding: 2rem;
+    font-size: xx-large;
+    text-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    display: inline;
+}
+
+.heading::after {
+    content: "";
+    width: 0%;
+    height: 0.2rem;
+    background: red;
+    margin: auto;
+    border-radius: 1rem;
+    transition: 0.7s;
+    display: block;
+}
+
+.heading:hover {
+    color: white;
+    text-shadow: 0 .4rem 1rem rgba(0, 0, 0, 1);
+}
+
+.heading:hover::after {
+    width: 20%;
+}
+
+.songs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.screen {
+    height: 15rem;
+    width: 25rem;
+    margin: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.songs .screen video {
+    height: 15rem;
+    width: 25rem;
+    object-fit: cover;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.songs .screen video:hover {
+    transition: 0.2s linear;
+    transform: scale(1.3);
+}
+
+.songs .screen .active {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 80%;
+    box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.songs .screen .active:hover {
+    transition: none;
+    transform: translate(-50%, -50%)scale(1);
+}
+
+.screen h3 {
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
