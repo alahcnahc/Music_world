@@ -169,7 +169,7 @@ button a {
         top: 50%;
         left: 50%;
         text-align: center;
-        transform: translate(-50%, -110%);
+        transform: translate(-50%, -80%);
     }
     /* Text Logo */
     div #music {
