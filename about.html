@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <title>About Us</title>
+</head>
+<body>
+    
+        <div id="navbar">
+            <img src="icon2.png" id="icon">
+            <h4 id="music">Music &hearts;</h4>
+            <nav class="nav">
+                <ul id="menuList">
+                    <li id="menu-1"><a href="index.html">Home</a></li>
+                    <li id="menu-2"><a href="about.html">About Us</a></li>
+                    <li id="menu-3"><a href="gallery.html">Music Gallery</a></li>
+                    <li id="menu-4"><a href="contact us.html">Contact Us</a></li>
+                    <li id="menu-5"><a href="index.html">Help</a></li>
+                </ul>
+            </nav>
+            <i class="fa fa-bars" onclick="togglemenu()"></i>
+        </div>
+        <!-- About  -->
+        <div class="row">
+            <div class="containers">
+              
+              <div class="pic"></div>
+              
+            </div>
+            
+            <div class="content">
+              <h1 class="contentHead">About Me</h1>
+              <h3>Hello Folks, This is Ashish Kumar.</h3>
+              <h2>
+                 I'm a intermediate frontend developer, just came up <br> with this website for time pass but bit by bit <br> I get excited to make it full fledged working website. <br> And here is the result
+                <br/><br/>
+                Show your L<span>&hearts;</span>VE if you like my website.
+                </h2>
+            </div>
+        </div>   
+        <footer>&#169; Made with <span>&hearts;</span> BY A.K.</footer>
+            <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+        
+            function togglemenu() {
+                if (menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "300px";
+        
+                } else {
+                    menuList.style.maxHeight = "0px";
+                }
+            }
+        </script>
+</body>
+</html>
