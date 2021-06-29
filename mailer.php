@@ -1,22 +1,16 @@
 <?php
-    $name = $_POST['name'];
-    $visitor_email = $_POST['email'];
-    $message = $_POST['message'];
-
-    $email_from = 'ashukumarsharma27.7@gmail.com';
-    $email_subject = "New Form Submission";
-    $email_body = "User Name: $name.\n".
-                    "User Email: $visitor_email.\n".
-                      "User Message: $message.\n";
-
-    $to = "ak.ashish.alahcnahctic@gmail.com";
-    
-    $headers = "From: $email_from \r\n";
-
-    $headers .= "Reply-To: $visitor_email \r\n";
-    
-    mail($to,$email_subject,$email_body,$headers);
-
-    header("Location: contact us.html");
-    
+//get data from form  
+$name = $_POST['name'];
+$email= $_POST['email'];
+$message= $_POST['message'];
+$to = "ak.ashish.alahcnahctic@gmail.com";
+$subject = "Mail From music-lover";
+$txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message =" . $message;
+$headers = "From: noreply@music-lover.com" . "\r\n" .
+"CC: somebodyelse@example.com";
+if($email!=NULL){
+    mail($to,$subject,$txt,$headers);
+}
+//redirect
+header("Location:index.html");
 ?>
