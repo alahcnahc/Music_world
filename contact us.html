@@ -31,7 +31,7 @@
         
     </div>
     <div class="contactForm">
-        <form action="mailer.php" method="POST">
+        <form action="/contact us.html" method="POST" data-netlify-recaptcha="true" data-netlify="true">
             <h2>Send Message</h2>
            <div class="inputBox">
                <input type="text" name="name" required="required">
@@ -45,6 +45,7 @@
                <textarea name="message" id=""  required="required"></textarea>
                <span>Type Your Message........</span>
             </div>
+            <div data-netlify-recaptcha="true"></div>
            <div class="inputBox">
                <input type="submit" value="Send">
            </div>
