@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="contact us.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <section class="contact">
+    <div id="navbar">
+        <img src="icon2.png" id="icon">
+        <h3 id="music">Music <span>&hearts;</span></h3>
+        <nav class="nav">
+            <ul id="menuList">
+                <li id="menu-1"><a href="index.html">Home</a></li>
+                <li id="menu-3"><a href="gallery.html">Music Gallery</a></li>
+                <li id="menu-2"><a href="about.html">About Us</a></li>
+                <li id="menu-4"><a href="contact us.html">Contact Us</a></li>
+                <li id="menu-5"><a href="index.html">Help</a></li>
+            </ul>
+        </nav>
+        <i class="fa fa-bars" onclick="togglemenu()"></i>
+    </div>
+
+    <div class="title">
+        <h3>Contact Us</h3>
+        
+    </div>
+    <div class="contactForm">
+        <form action="/contact us.html" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+            <h2>Send Message</h2>
+           <div class="inputBox">
+               <input type="text" name="name" required="required">
+               <span>Full Name</span>
+           </div>
+           <div class="inputBox">
+               <input type="email" name="email" required="required">
+               <span>Email</span>
+            </div>
+           <div class="inputBox">
+               <textarea name="message" id=""  required="required"></textarea>
+               <span>Type Your Message........</span>
+            </div>
+            <div data-netlify-recaptcha="true"></div>
+           <div class="inputBox">
+               <input type="submit" value="Send">
+           </div>
+        </form>
+        
+    </div>
+    <footer>&#169; Made with <span>&hearts;</span> BY A.K.</footer>
+</section>
+
+<script>
+    var menuList = document.getElementById("menuList");
+    menuList.style.maxHeight = "0px";
+
+    function togglemenu() {
+        if (menuList.style.maxHeight == "0px") {
+            menuList.style.maxHeight = "300px";
+
+        } else {
+            menuList.style.maxHeight = "0px";
+        }
+    }
+</script>
+</body>
+</html>
